@@ -50,19 +50,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCWAzGMTyg1uSspi1qfno71sj4iCfp7qGk',
-    appId: '1:948878883710:android:516b94bdc2276b68a0512f',
+    apiKey: 'AIzaSyC4e0ib6feXGlVnrfFC03HTt6gGPDvL',
+    appId: '1:594403885568:android:9c56e512dda0eb17b80ee5',
     messagingSenderId: '948878883710',
-    projectId: 'fir-emoney-e9256',
-    storageBucket: 'fir-emoney-e9256.firebasestorage.app',
+    projectId: 'dompet-kampus-global',
+    storageBucket: 'dompet-kampus-global.firebasestorage.app',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA46uBUvmVQKsSL7HIXZG58MD9jXQCFX7c',
-    appId: '1:948878883710:ios:5363ad2b9fbe06b2a0512f',
-    messagingSenderId: '948878883710',
-    projectId: 'fir-emoney-e9256',
-    storageBucket: 'fir-emoney-e9256.firebasestorage.app',
-    iosBundleId: 'com.kampus.dompetKampusGlobal',
-  );
 }
