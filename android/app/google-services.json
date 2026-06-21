@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "594403885568",
+    "project_id": "dompet-kampus-global",
+    "storage_bucket": "dompet-kampus-global.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594403885568:android:47b47a99590bd1afb80ee5",
+        "android_client_info": {
+          "package_name": "com.example.mobile_uas_dompet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594403885568-jg3o32ncgbdu83ocr8knsesui0sbubka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4e0ib6feXGlVnrfFC03HTt6gGPDvL_AI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594403885568-jg3o32ncgbdu83ocr8knsesui0sbubka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594403885568:android:9c56e512dda0eb17b80ee5",
+        "android_client_info": {
+          "package_name": "dompet.kampus.global"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594403885568-jg3o32ncgbdu83ocr8knsesui0sbubka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4e0ib6feXGlVnrfFC03HTt6gGPDvL_AI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594403885568-jg3o32ncgbdu83ocr8knsesui0sbubka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

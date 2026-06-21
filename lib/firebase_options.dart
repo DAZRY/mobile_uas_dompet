@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,20 +25,11 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.linux:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -50,11 +38,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC4e0ib6feXGlVnrfFC03HTt6gGPDvL',
-    appId: '1:594403885568:android:9c56e512dda0eb17b80ee5',
-    messagingSenderId: '948878883710',
+    apiKey: 'AIzaSyC4e0ib6feXGlVnrfFC03HTt6gGPDvL_AI',
+    appId: '1:594403885568:android:47b47a99590bd1afb80ee5',
+    messagingSenderId: '594403885568',
     projectId: 'dompet-kampus-global',
     storageBucket: 'dompet-kampus-global.firebasestorage.app',
   );
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCBs9iDSbKPpiCF1QoYhJrn868h7qidX3g',
+    appId: '1:594403885568:web:81026f66fb4342eab80ee5',
+    messagingSenderId: '594403885568',
+    projectId: 'dompet-kampus-global',
+    authDomain: 'dompet-kampus-global.firebaseapp.com',
+    storageBucket: 'dompet-kampus-global.firebasestorage.app',
+  );
 
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBfeB0D6ywf6DEtV2a-Ez_CkSND2A1gqJk',
+    appId: '1:594403885568:ios:92df36e88679dd9db80ee5',
+    messagingSenderId: '594403885568',
+    projectId: 'dompet-kampus-global',
+    storageBucket: 'dompet-kampus-global.firebasestorage.app',
+    iosClientId: '594403885568-6h13bn0rv1a305ofsqjkd566qebmk3b3.apps.googleusercontent.com',
+    iosBundleId: 'com.example.mobileUasDompet',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyBfeB0D6ywf6DEtV2a-Ez_CkSND2A1gqJk',
+    appId: '1:594403885568:ios:92df36e88679dd9db80ee5',
+    messagingSenderId: '594403885568',
+    projectId: 'dompet-kampus-global',
+    storageBucket: 'dompet-kampus-global.firebasestorage.app',
+    iosClientId: '594403885568-6h13bn0rv1a305ofsqjkd566qebmk3b3.apps.googleusercontent.com',
+    iosBundleId: 'com.example.mobileUasDompet',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCBs9iDSbKPpiCF1QoYhJrn868h7qidX3g',
+    appId: '1:594403885568:web:c1765f799d877f7db80ee5',
+    messagingSenderId: '594403885568',
+    projectId: 'dompet-kampus-global',
+    authDomain: 'dompet-kampus-global.firebaseapp.com',
+    storageBucket: 'dompet-kampus-global.firebasestorage.app',
+  );
 }
